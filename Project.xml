@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <meta title="Backrooms Survival" package="com.backrooms.survival" version="1.0.0" />
+  
+  <app main="Main" file="Game" />
+  
+  <window width="640" height="480" />
+  
+  <source path="./source" />
+  
+  <haxelib name="flixel" />
+  <haxelib name="flixel-addons" />
+  <haxelib name="hscript" />
+  <haxelib name="newgrounds" />
+</project>
