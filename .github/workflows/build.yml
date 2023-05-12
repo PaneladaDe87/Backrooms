@@ -20,15 +20,13 @@ jobs:
         haxe-version: "4.2.3"
         openfl-version: "9.2.1"
         
-    - name: Install OpenFL
+    - name: Install OpenFL and Build APK
       run: |
         sudo apt update
         sudo apt install haxe
         haxelib install openfl
         haxelib run openfl setup
-
-    - name: Build APK
-      run: openfl build android -release
+        haxelib run openfl build android -release
 
     - name: Create Release
       id: create_release
