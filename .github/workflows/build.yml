@@ -13,13 +13,7 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v2
-
-    - name: Install Haxe
-      uses: krdlab/setup-haxe@v1
-      with:
-        haxe-version: "4.2.3"
-        openfl-version: "9.2.1"
-        
+    
     - name: Install OpenFL and Build APK
       run: |
         sudo apt update
