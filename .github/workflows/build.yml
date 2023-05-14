@@ -18,6 +18,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt install haxe
+        haxelib setup
         haxelib install openfl
         haxelib run openfl setup
         haxelib run openfl build android -release
