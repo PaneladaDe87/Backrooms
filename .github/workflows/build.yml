@@ -17,7 +17,7 @@ jobs:
     - name: Install OpenFL and Build APK
       run: |
         sudo apt update
-        sudo apt install haxe
+        sudo apt install -y haxe
         haxelib setup
         haxelib install openfl
         haxelib run openfl setup
